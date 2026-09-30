@@ -2,135 +2,126 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Boss Breaker</title>
 <style>
-  :root{
-    --bg:#0b0b0d; --panel:#141417; --line:#26262b;
-    --ink:#e8e6e3; --dim:#9a968f; --ember:#e0552c; --gold:#d9a327;
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+    max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
+    color: #17141d; background: #ffffff;
   }
-  *{box-sizing:border-box}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-    -webkit-text-size-adjust:100%;
+  @media (prefers-color-scheme: dark) {
+    body { color: #e9e4ef; background: #14111b; }
+    td, th { border-color: #332c40 !important; }
+    code { background: #241f30; }
   }
-  .wrap{max-width:680px; margin:0 auto; padding:40px 22px 80px}
-  header{border-bottom:1px solid var(--line); padding-bottom:22px; margin-bottom:34px}
-  .kicker{
-    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
-    color:var(--ember); font-weight:700; margin:0 0 10px
-  }
-  h1{font-size:28px; line-height:1.2; margin:0 0 8px; letter-spacing:-.01em}
-  .updated{color:var(--dim); font-size:14px; margin:0}
-  h2{
-    font-size:19px; margin:40px 0 12px; padding-top:4px;
-    letter-spacing:-.005em
-  }
-  h2:first-of-type{margin-top:0}
-  p{margin:0 0 14px}
-  a{color:var(--gold)}
-  a:hover{color:var(--ember)}
-  ul{margin:0 0 14px; padding-left:22px}
-  li{margin-bottom:7px}
-  strong{color:#fff}
-  .lede{
-    background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--ember);
-    border-radius:6px; padding:18px 20px; margin:0 0 8px
-  }
-  .lede p:last-child{margin-bottom:0}
-  table{border-collapse:collapse; width:100%; margin:0 0 16px; font-size:15px}
-  th,td{text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); vertical-align:top}
-  th{color:var(--dim); font-weight:600; font-size:12px; letter-spacing:.08em; text-transform:uppercase}
-  .tablewrap{overflow-x:auto}
-  footer{
-    margin-top:56px; padding-top:22px; border-top:1px solid var(--line);
-    color:var(--dim); font-size:14px
-  }
-  footer a{color:var(--dim); text-decoration:underline}
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.12rem; margin: 2.3rem 0 .6rem; }
+  .updated { color: #6d6580; font-size: .92rem; margin: 0 0 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: .8rem 0 0; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid #e4e0ea;
+           vertical-align: top; font-size: .96rem; }
+  th { font-weight: 600; }
+  ul { padding-left: 1.15rem; }
+  li { margin: .3rem 0; }
+  a { color: inherit; }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-<header>
-  <p class="kicker">Boss Breaker</p>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 30 August 2026</p>
-</header>
+<h1>Privacy Policy — Boss Breaker</h1>
+<p class="updated">Last updated: 30 September 2026</p>
 
-<div class="lede">
-  <p>Boss Breaker asks you for nothing. No account, no sign-in, no email address,
-  no analytics. It does show ads between some runs, and the ad network sees a
-  little about your device. That is the only data that leaves your phone.</p>
-</div>
+<p>Boss Breaker asks you for nothing. No account, no sign-in, no email address,
+no analytics. It does show ads between some runs, and the ad network sees a
+little about your device. That is the only data that leaves your phone.</p>
 
 <h2>What stays on your device</h2>
-<p>Three values are saved locally and never transmitted anywhere:</p>
-<div class="tablewrap">
+
+<p>Three values are saved locally so the game behaves the way you left it. None
+of them are sent anywhere, and deleting the app deletes them.</p>
+
 <table>
   <tr><th>What</th><th>Why</th></tr>
-  <tr><td>Your best score</td><td>So it survives closing the app</td></tr>
+  <tr><td>Your best score</td><td>So it is still there when you close the app</td></tr>
   <tr><td>Whether sound is muted</td><td>So the app opens the way you left it</td></tr>
-  <tr><td>Whether auto fast-forward is on</td><td>Same</td></tr>
+  <tr><td>Whether auto fast-forward is on</td><td>Same reason</td></tr>
 </table>
-</div>
-<p>Deleting the app deletes them.</p>
 
 <h2>Advertising</h2>
-<p>The app shows a full-screen ad between some runs, served by <strong>Google
-AdMob</strong>. To do that, Google receives:</p>
+
+<p>Boss Breaker shows a full-screen ad between some runs, and an optional ad you
+can choose to watch in exchange for a powerup. Ads are served by Google AdMob.
+To do that, the ad SDK receives:</p>
+
 <ul>
-  <li>A device identifier, used to limit how often you see the same ad and to
-  measure whether an ad worked</li>
-  <li>Basic usage and diagnostic information from the ad SDK</li>
-  <li>Approximate location derived from your IP address, as with any internet
-  request</li>
+  <li>a device identifier</li>
+  <li>usage and diagnostic information about how the ad performed</li>
+  <li>your approximate location, derived from your IP address</li>
 </ul>
-<p><strong>We do not track you across other apps or websites.</strong> The app
-never requests App Tracking Transparency permission and does not use your
-device's advertising identifier for cross-app tracking, which means the ads you
-see are non-personalised.</p>
-<p>Google's handling of this data is governed by its own policy:
-<a href="https://policies.google.com/technologies/partner-sites">Google's
-partner-sites policy</a>.</p>
-<p>If you are in the EEA, the UK, or Switzerland, a consent form appears before
-any ads load, and you can change your answer at any time.</p>
+
+<p>If you are in the European Economic Area, the United Kingdom, or Switzerland,
+a consent form appears before any ad loads. It is provided by Google's own
+consent management platform, which is certified under the IAB Europe
+Transparency and Consent Framework. Your answer decides what happens next:</p>
+
+<ul>
+  <li><strong>If you consent</strong>, ads may be personalised using information
+      Google already holds about your device.</li>
+  <li><strong>If you decline</strong>, you still get ads, but they are
+      non-personalised — chosen from general context rather than anything about
+      you.</li>
+</ul>
+
+<p>Everywhere else, ads are served under Google's standard terms for that
+region.</p>
+
+<p>Boss Breaker does not track you across other apps or websites. On iOS the app
+never presents the App Tracking Transparency prompt, which means it does not
+have access to your device's advertising identifier for cross-app tracking, on
+any setting.</p>
+
+<p>What Google does with ad data is governed by
+<a href="https://policies.google.com/privacy">Google's own privacy policy</a>.</p>
 
 <h2>What the app does not do</h2>
+
 <ul>
-  <li>No account, sign-in, or email address</li>
-  <li>No analytics or crash reporting beyond what the ad SDK reports to Google</li>
-  <li>No access to location, contacts, camera, microphone, photos, or health data</li>
+  <li>No accounts, sign-ins, or email addresses</li>
+  <li>No analytics beyond what the ad SDK reports about its own ads</li>
+  <li>No access to your location, contacts, camera, microphone, photos, or
+      health data — the app never asks for any of these permissions</li>
   <li>No purchases of any kind</li>
-  <li>No chat, no user-generated content, no links out of the game</li>
+  <li>No user-generated content, chat, or social features</li>
+  <li>No selling or sharing of personal information</li>
 </ul>
 
 <h2>Children</h2>
-<p>The app is rated for all ages and asks no personal information from anyone.
-Ad content is filtered to an age-appropriate rating. If you believe a child has
-been shown something inappropriate, contact us and we will tighten the setting.</p>
+
+<p>Boss Breaker applies age-appropriate ad filtering. If you see an ad in the
+game that you do not think belongs there, email the address below and the
+settings will be tightened.</p>
 
 <h2>Your choices</h2>
+
 <ul>
-  <li>Turning ads off inside the app is not currently possible.</li>
-  <li>On iOS you can limit ad tracking system-wide under
-  <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
-  <li>Deleting the app removes everything stored locally.</li>
+  <li><strong>Limit ad tracking at the system level.</strong> On iOS, Settings →
+      Privacy &amp; Security → Tracking. On Android, Settings → Privacy → Ads.</li>
+  <li><strong>Remove everything.</strong> Deleting the app deletes the three
+      saved values listed above. There is nothing held anywhere else to delete.</li>
 </ul>
 
-<h2>Changes</h2>
-<p>If a future version collects anything more, this policy will be updated
-before that version ships.</p>
+<h2>Changes to this policy</h2>
+
+<p>If a future version of Boss Breaker collects anything beyond what is described
+here, this page will be updated before that version ships, and the date at the
+top will change.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy:
-<a href="mailto:vampyrobusiness@gmail.com">vampyrobusiness@gmail.com</a></p>
 
-<footer>
-  <p><a href="./">Boss Breaker support</a></p>
-</footer>
+<p>Questions about any of this: <a href="mailto:vampyrobusiness@gmail.com">vampyrobusiness@gmail.com</a></p>
 
-</div>
 </body>
 </html>
